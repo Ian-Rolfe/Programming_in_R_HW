@@ -119,27 +119,25 @@ prev_list_sum(x)
 #' Creating Fibonacci numbers with a for loop
 #' 
 
-# Gonna include a x[i] = x[i-1] + x[i-2] in the for loop
-# Not sure yet how I want to generate the vector as it is being made 
-  # Look below for if statement that might help
-# maybe start with a vector that is 0 and 1 and then create another and print that at the end of the loop
-
 # Changed question -- Make a function that takes a numeric argument that gives that number of numbers from the fibonacci sequence
 
-x = c(0,1,1)
-u = c(1,2,3,4,5,6,7,8,9,10)
-
 fibonacci_sum = function(x){
-  for(i in 1:length(x)){
-    y = x
+  for(i in 1:x){
+    y = c(0,1,1,2,3)
+    f = 0
     if (i < 3){
-      y[i] = x[i]
+      f[i] = y[i]
+    }
+    else if (i > 5){
+      f[i] = y[(i-1)] + y[(i-2)]
     }
     else {
-      y[i] = x[(i-1)] + x[(i-2)]
+      f[i] = f[i-1] + f[i-2]
     }
   }
-  print(y)
+  print(f)
 }
 
-fibonacci_sum(x)
+fibonacci_sum(4)
+
+
