@@ -115,7 +115,7 @@ prev_list_sum = function(x){
   
 prev_list_sum(x)
 
-#' ## Question 8
+#' ## Question 8 (Optional)
 #' Creating Fibonacci numbers with a for loop
 #' 
 
@@ -138,6 +138,7 @@ fibonacci_sum = function(x){
   print(f)
 }
 
-fibonacci_sum(4)
+fibonacci_sum(5)
 
-
+# I couldn't get this to work. It seems like it should, but maybe you can't use 'i' like I was trying to.
+# Not really sure what the fix is for this
