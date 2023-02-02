@@ -106,6 +106,8 @@ y
 #' 
 #' I didn't like the y[i] > 10 = NA, so I removed that from my function
 
+# Should realistically add some defensive code that would prevent errors that don't make sense
+  # Prevent people from putting non-vectors or character strings
 prev_list_sum = function(x){
   for(i in 1:length(x)) {
     y[i] <- sum(x[1]:x[i])
@@ -120,7 +122,7 @@ prev_list_sum(x)
 #' 
 
 # Changed question -- Make a function that takes a numeric argument that gives that number of numbers from the fibonacci sequence
-
+# Look at solutions for help with the code
 fibonacci_sum = function(x){
   for(i in 1:x){
     y = c(0,1,1,2,3)
